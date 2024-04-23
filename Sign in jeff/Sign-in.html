@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-in</title>
+</head>
+<body>
+
+  <!--  Desktop-menu.html -->
+  <header>
+    <h2>LOGO</h2>
+    <nav>
+      <a href="file:///C:/Users/EKENE/Documents/Jeffreynewhtml/Html%20Tutorials/Jeff.html">Home</a>&nbsp &nbsp &nbsp
+      <a href="Aboutpage">About</a>&nbsp &nbsp &nbsp
+      <a href="COntact info">Contacts</a>&nbsp &nbsp &nbsp
+      <a href="Services info">Services</a>&nbsp &nbsp &nbsp
+      <button class="Log-in">Log in</button>
+    </nav>
+    <style>
+      header {
+        background-color: rgb(231, 72, 72);
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        top: 0;
+        left: 0;
+        padding-left: 30px;
+        position: fixed;
+        width: 100%;
+        
+      }
+
+      nav{
+        padding-right: 30px;
+        
+      }
+
+      a {
+        position: relative;
+        font-size: 1.1m;
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        margin-left: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .Log-in {
+        margin-right: 50px;
+        width: 70px;
+        height: 40px;
+        color: white;
+        border-radius: 15px;
+        cursor: pointer;
+        background-color: rgb(104, 103, 103);
+        transition: opacity 0.5s;
+      }
+
+      .Log-in:hover {
+        background-color: black;
+        opacity: 0,8;
+      }
+
+      .Log-in:active {
+        opacity: 0.5;
+      }
+
+    </style>
+  </header>
+
+  <div class="main-div">
+    <h2>Sign in</h2>
+    <h4 class="sub-head">Stay updated on your professional world</h4>
+    <input class="Email" type="text" placeholder="Email or Phone" required/>
+      <div class="pass-see">
+        <input class="Passwordd" type="password" placeholder="Password" required id="password"/> &nbsp &nbsp
+        <img  class="show-pass" src="kindpng_3273865.png" id="eyeicon">
+      </div>
+    <h4><a class="Forgot" href="Regainpassword">Forgot password?</a></h4><br>
+    <button title="sign in to web" class="sign-in-button">Sign in</button><br>
+    <hr class="hr1">&nbsp or &nbsp<hr class="hr2"><br>
+    <button class="Apple-sign"><img class="Apple-logo" src="apple-logo-png-12903.png"> Sign in with Apple</button><br>
+    <button class="mail-sign"><img class="Gmail-logo" src="google-logo-9827.png"> Sign in with mail</button><br>
+
+    <script>
+
+      let eyeicon = document.getElementById("eyeicon")
+      let password = document.getElementById("password")
+
+      eyeicon.onclick = function(){
+        if(password.type == "password"){
+          password.type = "text";
+          eyeicon.src = "clipart2178237.png";
+        }else{
+          password.type = "password";
+          eyeicon.src = "kindpng_3273865.png";
+        }
+      }
+    </script>
+    <style>
+      .main-div {
+        border-style: outset;
+        align-items: center;
+        margin-left: 70px;
+        width: 80%;
+        margin-top: 220px;
+        padding-left: 20px;
+        padding-bottom: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 10px;
+        max-width: 360px;
+        box-shadow: 0 0 10px gray;
+      }
+
+      @media (max-width: 600px) {
+        .main-div {
+          margin: 0;
+          padding-left: 15px;
+          width: 90%;
+          margin-top: 200px;
+        }
+
+        header {
+          padding-left: 5px;
+        }
+
+        nav {
+          padding-right: 0px;
+          align-items: center;
+        }
+      }
+      .Email {
+        width: 300px;
+        height: 40px;
+        border-radius: 5px;
+        background-color: peachpuff;
+        margin-bottom: 27px;
+        padding-left: 12px;
+        border-style: groove;
+      }
+
+      .pass-see {
+        display: flex;
+        align-items: center;
+      }
+
+      .Passwordd {
+        width: 300px;
+        height: 40px;
+        border-radius: 5px;
+        background-color: peachpuff;
+        padding-left: 12px;
+        margin-bottom: 7px;
+        border-style: groove;
+        display: flex;
+        align-items: center;
+      }
+
+      .show-pass {
+        width: 15px;
+        height: 15px;
+        display: flex;
+        cursor: pointer;
+      }
+
+      h2{
+        padding-bottom: 5px;
+        margin-bottom: 0px;
+        color: white;
+      }
+
+      h4{
+        margin-top: 2px;
+        font-size: small;
+        margin-bottom: 0px;
+      }
+      body{
+        background-image: url("andrej-lisakov-g3z-CgUiPtg-unsplash.jpg");
+        color: gray;
+        display: flex;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+       
+      }
+
+      .Forgot {
+        margin-left: 0px;
+        font-size: small;
+        color: skyblue;
+      }
+
+      .sign-in-button {
+        width: 340px;
+        height: 40px;
+        padding-top: 0px;
+        color: white;
+        background-color: rgb(231, 72, 72);
+        border: none;
+        border-radius: 20px;
+        margin-bottom: 10px;
+        cursor: pointer;
+      }
+
+      .sign-in-button:hover {
+        background-color: gray;
+      }
+
+      .sign-in-button:active {
+        opacity: 0.5;
+      }
+      
+      .sub-head {
+        margin-top: 2px;
+        font-size: small;
+        margin-bottom: 20px;
+        color: gray;
+      }
+
+      .hr1 {
+        display: inline-block;
+        width: 42%;
+      }
+
+      .hr2 {
+        display: inline-block;
+        width: 42%;
+      }
+
+      .Apple-sign {
+        width: 335px;
+        height: 40px;
+        padding-top: 0px;
+        color: black;
+        background-color: white;
+        border: groove;
+        border-radius: 20px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        cursor: pointer;
+      }
+
+      .Apple-sign:hover {
+        background-color: brown;
+        opacity: 0.8;
+      }
+
+      .Apple-sign:active {
+        opacity: 0.5;
+      }
+
+      .Apple-logo {
+        width: 10px;
+        height: 10px;
+        padding-right: 7px;
+      }
+      
+      .mail-sign {
+        width: 335px;
+        height: 40px;
+        padding-top: 0px;
+        color: white;
+        background-color: blue;
+        border: groove;
+        border-radius: 20px;
+        margin-bottom: 10px;
+        cursor: pointer;
+      }
+
+      .mail-sign:hover {
+        opacity: 0.8;
+        background-color: gray;
+      }
+
+      .mail-sign:active {
+        opacity: 0.5;
+      }
+
+      .Gmail-logo {
+        width: 10px;
+        height: 10px;
+        padding-right: 6px;
+      }
+    </style>
+  </div>
+
+    <script>
+      console.log(5*7);
+    </script>
+
+  <!-- mobile-menu.html -->
+
+</body>
+</html>
