@@ -1,0 +1,1 @@
+This is a simple sign-in page with a mark-up language called 'HTML'. This simple project is done strictly with html and css as there is no complete interactiveness with the website. Due to the fact that the page cannot be viewed via github directly, you can just download the documents to your local device and run it locally via VS Code or other editors.
